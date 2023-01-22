@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B1FBC3F0-0284-42AC-91CC-6E2C472B1E25}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Primo.Sevur</RootNamespace>
+    <AssemblyName>Primo.Sevur</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LTools.Common">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Primo\Primo Studio Community\LTools.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LTools.Dto">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Primo\Primo Studio Community\LTools.Dto.dll</HintPath>
+    </Reference>
+    <Reference Include="LTools.Enums">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Primo\Primo Studio Community\LTools.Enums.dll</HintPath>
+    </Reference>
+    <Reference Include="LTools.Scripting">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Primo\Primo Studio Community\LTools.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="LTools.SDK">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Primo\Primo Studio Community\LTools.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="LTools.Workflow">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Primo\Primo Studio Community\LTools.Workflow.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Network\FileDownload.cs" />
+    <Compile Include="Network\FileDownload_Form.xaml.cs">
+      <DependentUpon>FileDownload_Form.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Network\FileDownload_Form.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Network\FileDownload.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

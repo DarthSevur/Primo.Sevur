@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Primo.Sevur", "Primo.Sevur.Activities\Primo.Sevur.csproj", "{B1FBC3F0-0284-42AC-91CC-6E2C472B1E25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1FBC3F0-0284-42AC-91CC-6E2C472B1E25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1FBC3F0-0284-42AC-91CC-6E2C472B1E25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1FBC3F0-0284-42AC-91CC-6E2C472B1E25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1FBC3F0-0284-42AC-91CC-6E2C472B1E25}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {71CE10BB-C5A4-41A6-9EA0-32265BE18E32}
+	EndGlobalSection
+EndGlobal
